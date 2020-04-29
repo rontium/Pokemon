@@ -1,0 +1,26 @@
+<ion-header translucent>
+  <ion-toolbar color="secondary">
+    <ion-title>
+     Etsi Pokemon
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="light" class="ion-padding" ion-text>
+
+  <ion-button (click)="avaa()" size="large" expand="block" fill="outline" color="tertiary" class="ion-padding">Valitse Pokemonin nimi</ion-button>
+
+  <ion-list >
+
+    <ion-list-header  color="dark" class="ion-padding">
+      Pokemon - haku
+    </ion-list-header>
+    
+      <ion-item color="medium"><ion-label>nimi</ion-label>{{ pokemon.nimi }}</ion-item>
+      <ion-item color="medium"><ion-label>pituus</ion-label>{{ pokemon.pituus }}</ion-item>
+      <ion-item color="medium"><ion-label>paino</ion-label>{{ pokemon.paino }}</ion-item>
+      <ion-item color="medium"><ion-img [src]="pokemon.kuva"></ion-img></ion-item>
+
+    </ion-list>
+   
+</ion-content>
